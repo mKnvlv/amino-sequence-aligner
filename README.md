@@ -1,2 +1,2 @@
 # amino-sequence-aligner
-## Тестовое задание 
+## Тестовое задание BIOCAD
