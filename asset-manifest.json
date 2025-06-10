@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/amino-sequence-aligner/static/css/main.3851d270.css",
+    "main.js": "/amino-sequence-aligner/static/js/main.0dea6327.js",
+    "index.html": "/amino-sequence-aligner/index.html",
+    "main.3851d270.css.map": "/amino-sequence-aligner/static/css/main.3851d270.css.map",
+    "main.0dea6327.js.map": "/amino-sequence-aligner/static/js/main.0dea6327.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3851d270.css",
+    "static/js/main.0dea6327.js"
+  ]
+}
