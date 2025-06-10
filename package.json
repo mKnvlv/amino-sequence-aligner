@@ -2,7 +2,7 @@
   "name": "amino-sequence-aligner",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mknvlv.github.io/sequence-aligner",
+  "homepage": "https://mKnvlv.github.io/amino-sequence-aligner",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

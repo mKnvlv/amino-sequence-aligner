@@ -1,4 +1,4 @@
-import { FC, memo, useCallback } from 'react';
+import { FC, useCallback } from 'react';
 import { toast } from 'react-toastify';
 import { Box } from '@mui/material';
 import 'react-toastify/dist/ReactToastify.css';
