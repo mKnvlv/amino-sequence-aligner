@@ -1,11 +1,11 @@
-import { FC, memo, useState } from 'react';
+import { FC, useState } from 'react';
 import { TextField, Button, Box } from '@mui/material';
 import { AMINO_ACID_REGEX } from '../utils/config';
 
 type SequenceFormProps = {
   setResult: (result: { seq1: string; seq2: string }) => void;
 };
-export const SequenceForm: FC<SequenceFormProps> = memo(({ setResult }) => {
+export const SequenceForm: FC<SequenceFormProps> = ({ setResult }) => {
   const [seq1, setSeq1] = useState('');
   const [seq2, setSeq2] = useState('');
 
@@ -78,7 +78,6 @@ export const SequenceForm: FC<SequenceFormProps> = memo(({ setResult }) => {
 
       <Button
         variant="contained"
-        onClick={handleSubmit}
         disabled={!seq1 || !seq2}
         sx={{ mt: 2 }}
         type="submit"
@@ -87,4 +86,4 @@ export const SequenceForm: FC<SequenceFormProps> = memo(({ setResult }) => {
       </Button>
     </Box>
   );
-});
+};

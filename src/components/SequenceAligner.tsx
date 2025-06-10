@@ -10,13 +10,10 @@ export default function SequenceAligner() {
     null
   );
 
-  const setResultHandler = useCallback(
-    (value: { seq1: string; seq2: string }) => {
-      setResult(value);
-    },
-    []
-  );
-
+  const setResultHandler = (value: { seq1: string; seq2: string }) => {
+    setResult(value);
+  };
+  console.log(result);
   return (
     <Box sx={{ p: 3, maxWidth: 800, margin: '0 auto' }}>
       <Typography variant="h4">

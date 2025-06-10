@@ -16,7 +16,7 @@ export const SequenceView: FC<SequenceViewProps> = ({ seq1, seq2 }) => {
       toast.success('Скопировано в буфер!', { autoClose: 1000 });
     }
   }, []);
-
+  console.log(seq1, seq2);
   return (
     <Box
       sx={{
@@ -29,9 +29,9 @@ export const SequenceView: FC<SequenceViewProps> = ({ seq1, seq2 }) => {
     >
       {/* Верхняя строка с цветами из AMINO_COLORS*/}
       <Box sx={{ mb: 1 }}>
-        {seq1.split('').map((char) => (
+        {seq1.split('').map((char, index) => (
           <span
-            key={char}
+            key={`${char}-${index}`}
             style={{ backgroundColor: AMINO_COLORS[char], padding: '2px' }}
           >
             {char}
@@ -43,7 +43,7 @@ export const SequenceView: FC<SequenceViewProps> = ({ seq1, seq2 }) => {
       <Box>
         {seq2.split('').map((char, index) => (
           <span
-            key={char}
+            key={`${char}-${index}`}
             style={{
               backgroundColor:
                 char !== seq1[index] ? ERROR_COLOR : 'transparent',
